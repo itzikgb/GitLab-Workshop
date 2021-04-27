@@ -1,5 +1,5 @@
 ---
-title: "AWS Modernization Workshop"
+title: "GitLab CI/CD Workshop"
 chapter: true
 weight: 1
 ---
