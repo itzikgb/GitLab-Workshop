@@ -1,7 +1,7 @@
 ---
 title: "GitLab DevOps Modernization Workshop"
 chapter: true
-weight: 1
+weight: 0
 ---
 
 ![GitLab Logo](/images/logo.png)
@@ -15,7 +15,7 @@ In this workshop you will learn about the GitLab DevOps platform and how to buil
 - Stand up a [self managed instance of GitLab](https://aws.amazon.com/marketplace/pp/B07SJ817DX).
 - Create a project, import a sample source code.
 - Configure CI/CD pipeline.
-- Change the code, run the pipeline which will build, test and deploy the new code to production. 
+- Change the code, run the pipeline which will build, test and deploy the new code to production.
 
 {{% notice warning %}}
 <p style='text-align: left;'>
