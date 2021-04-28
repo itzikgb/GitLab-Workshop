@@ -1,6 +1,6 @@
 ---
 title: "Prerequisites"
-chapter: true
+chapter: false
 weight: 1
 ---
 

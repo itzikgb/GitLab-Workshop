@@ -1,7 +1,7 @@
 ---
-title: "Prerequisites"
+title: "Lab2"
 chapter: true
-weight: 1
+weight: 4
 ---
 
 The following items are required for this workshop:
