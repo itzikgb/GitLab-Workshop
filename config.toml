@@ -15,9 +15,9 @@ enableEmoji = true
   # See the config.toml file from this documentation site to have an example.
   #editURL = ""
   # Author of the site, will be used in meta information
-  author = "James Bland"
+  author = "Itzik Gan-Baruch"
   # Description of the site, will be used in meta information
-  description = "AWS Modernization Workshop"
+  description = "GitLab Modernization Workshop"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -45,8 +45,8 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-graduation-cap'></i> Modernization Workshops"
-url = "https://awsworkshop.io"
+name = "<i class='fas fa-graduation-cap'></i> Learn @GitLab"
+url = "https://about.gitlab.com/learn"
 weight = 10
 
 [[menu.shortcuts]]

@@ -12,9 +12,10 @@ weight: 1
 In this workshop you will learn about the GitLab DevOps platform and how to build, test, and deploy features and functionality at a faster pace.
 
 ### Learning Objectives
-- Deploy Cloud9 as an IDE for completing workshop exercises.
-- How DevOps patterns help to release features and functionality faster.
-- Best practices for implementing 2 pizza team pipelines.
+- Stand up a [self managed instance of GitLab](https://aws.amazon.com/marketplace/pp/B07SJ817DX).
+- Create a project, import a sample source code.
+- Configure CI/CD pipeline.
+- Change the code, run the pipeline which will build, test and deploy the new code to production. 
 
 {{% notice warning %}}
 <p style='text-align: left;'>
