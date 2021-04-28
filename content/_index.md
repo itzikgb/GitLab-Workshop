@@ -1,14 +1,15 @@
 ---
-title: "GitLab CI/CD Workshop"
+title: "GitLab DevOps Modernization Workshop"
 chapter: true
 weight: 1
 ---
 
-# AWS Modernization Workshop
+![GitLab Logo](/images/logo.png)
+# DevOps Modernization Workshop
 
 ### Welcome
 
-In this workshop you will learn why DevOps is a pattern for modernization and how to use patterns to release features and functionality at a faster pace.
+In this workshop you will learn about the GitLab DevOps platform and how to build, test, and deploy features and functionality at a faster pace.
 
 ### Learning Objectives
 - Deploy Cloud9 as an IDE for completing workshop exercises.
