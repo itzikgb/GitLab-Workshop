@@ -1,9 +1,10 @@
 ---
-title: "Lab1"
+title: "Lab1- stand up a self managed instance of GitLab"
 chapter: true
 weight: 3
 ---
 
 The following items are required for this workshop:
 
-- AWS account and required IAM Roles - If you are at an AWS event, an account will be provided. Otherwise, go [here](https://portal.aws.amazon.com/billing/signup#/start) to create an AWS account.
+- Admin area - Amazon EKS
+- access key, secret key 
