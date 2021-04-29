@@ -12,11 +12,11 @@ Your account must have the ability to create new IAM roles and scope other IAM p
 {{% /notice %}}
 
 {{% notice note %}}
-If you already have an AWS account, and have IAM Administrator access, go to 
+If you already have an AWS account, and have IAM Administrator access, go to
 [Provision VPC & Cloud9]({{< ref "#provision-vpc-and-cloud9" >}})
 {{% /notice %}}
 
-## Create an account 
+## Create an account
 
 1. If you don't already have an AWS account with Administrator access: [create
 one now](http://docs.aws.amazon.com/connect/latest/adminguide/gettingstarted.html#sign-up-for-aws)
@@ -38,14 +38,14 @@ as an **IAM user** with administrator access to the AWS account:
 ![Login URL](/images/getting_started/iam-4-save-url.png)
 
 
-## Provision VPC 
+## Provision VPC
 
    [Click here to deploy using CloudFormation template](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/template?stackName=ModernizationWorkshop-EKS&templateURL=https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/cfn/master-stacks/vpc-only.yaml)
 
    - Create stack, click **Next**
    - Specify stack details, click **Next**
    - Configure stack options, click **Next**
-   - Review UnicornDevSecOpsWorkshop, scroll to bottom section under **Capabilities** and check both boxes and click **Create stack** 
+   - Review UnicornDevSecOpsWorkshop, scroll to bottom section under **Capabilities** and check both boxes and click **Create stack**
 
 {{% notice info %}}
 The installation takes a few minutes. Please continue to the next section.

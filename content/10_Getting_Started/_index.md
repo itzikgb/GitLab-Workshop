@@ -1,7 +1,7 @@
 +++
 title = "Getting Started"
 chapter = true
-weight = 2
+weight = 3
 +++
 
 # Getting Started
