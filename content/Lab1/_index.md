@@ -1,12 +1,17 @@
 ---
-title: "Lab2 - Create GitLab project "
+title: "Lab1 - Stand-up GitLab Ultimate"
 chapter: true
-weight: 4
+weight: 3
 ---
 
-The following items are required for this workshop:
+In This lab we will spin-up GitLab Ultimate AMI in AWS.
 
-- AWS account and required IAM Roles - If you are at an AWS event, an account will be provided. Otherwise, go [here](https://portal.aws.amazon.com/billing/signup#/start) to create an AWS account.
+
+- Open [GitLab Ultimate](https://aws.amazon.com/marketplace/pp/B07SJ817DX) in AWS Marketplace.
+- Click on **Continue to Subscribe**
+- Sign in with your IAM user
+- Click on Continue to Configuration
+- Leave the default value for **Delivery Method**, Select the latest version in **Software Version**, Select your **Region**, click **Continue to Launch**.
 
 - run untagged jobs
 -
