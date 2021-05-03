@@ -10,9 +10,11 @@ In This lab we will spin-up GitLab Ultimate AMI in AWS.
 - Open [GitLab Ultimate](https://aws.amazon.com/marketplace/pp/B07SJ817DX) in AWS Marketplace.
 - Click on **Continue to Subscribe**
 - Sign in with your IAM user
-- Click on Continue to Configuration
+- Click on **Continue to Configuration**
 - Leave the default value for **Delivery Method**, Select the latest version in **Software Version**, Select your **Region**, click **Continue to Launch**.
-
+- In Lunch this software page, change the **Security Group Settings** to **default**, leave other fields with default values.  Click **Launch**
+- You will get Congratulations message confirmed you launched the machine successfully.
+- In this message click on **EC2 Console** link. 
 - run untagged jobs
 -
 1. container setup

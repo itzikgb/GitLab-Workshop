@@ -1,9 +1,10 @@
 ---
-title: "Lab4"
+title: "Lab4 - Create account in Surge"
 chapter: true
 weight: 6
 ---
 
-The following items are required for this workshop:
+In this workshop we will use Surge to deploy the application. In this lab we will create an account in Surge.
 
-- AWS account and required IAM Roles - If you are at an AWS event, an account will be provided. Otherwise, go [here](https://portal.aws.amazon.com/billing/signup#/start) to create an AWS account.
+- First, ensure you have a recent version of [Node.js](https://nodejs.org/en/download/current/)
+-
