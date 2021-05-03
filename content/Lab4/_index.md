@@ -1,11 +1,7 @@
 ---
-title: "Lab4 - Create account in Surge"
+title: "Lab4 - Preparations for application deployment"
 chapter: true
 weight: 6
 ---
 
-In this workshop we will use Surge to deploy the application. In this lab we will create an account in Surge.
-
-- First, ensure you have a recent version of [Node.js](https://nodejs.org/en/download/current/)
-- Then, install Surge using npm by running the following command:
-   `npm install --global surge`
+In this workshop we will use [Surge](https://surge.sh/) to deploy the application. In this lab we will create an account in Surge.
