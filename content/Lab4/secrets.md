@@ -6,4 +6,6 @@ weight: 8
 
 
 
-- Open the CI/CD settings, than open the 
+- Open the CI/CD settings
+- Expand Variables
+- Add a new variable , click **Add variable** , key is the email 
