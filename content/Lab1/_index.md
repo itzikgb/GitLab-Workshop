@@ -9,19 +9,19 @@ In This lab we will spin-up GitLab Ultimate AMI in AWS.
 
 - Open [GitLab Ultimate](https://aws.amazon.com/marketplace/pp/B07SJ817DX) in AWS Marketplace.
 - Click on **Continue to Subscribe**
-- Sign in with your IAM user
-- Click on **Continue to Configuration**
+- Sign in with your IAM user.
+- Click on **Continue to Configuration**.
 - Leave the default value for **Delivery Method**, Select the latest version in **Software Version**, Select your **Region**, click **Continue to Launch**.
 - In Lunch this software page, scroll down, under **Security Group Settings** click **Create New Based On Seller Settings** .
 - Name your security group, add a description, and Save it.
-- Select |**Key Pair**. If you don't have key pair, create one.
-- Leave other fields in this page with default values.  Click **Launch**
-- You will get Congratulations message confirmed you launched the machine successfully.
+- Select **Key Pair**. If you don't have key pair, create one.
+- Leave other fields in this page with default values.  Click **Launch**.
+- You will get Congratulations message confirming you launched the machine successfully.
 - In this message click on **EC2 Console** link.
 - Click on your instance ID link.
-- Open address
-- It takes a few minutes to start the server, you may see this error, this is ok, wait 1 minute and refresh the page. 
-- You are now should be able to access GitLab login page. username is **root**, password is your **instance ID**, click **Sign in**
+- Click Open address.
+- It takes a few minutes to start the server, you may see this error, this is ok, wait 1 minute and refresh the page.
+- You are now should be able to access GitLab login page. username is **root**, password is your **instance ID**, click **Sign in**.
 - Congratulations! you managed to start GitLab instance and sign in to it.
 
 - run untagged jobs
