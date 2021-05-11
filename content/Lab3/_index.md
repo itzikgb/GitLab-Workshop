@@ -1,15 +1,10 @@
 ---
-title: "Lab3 - install and register GitLab Runner"
+title: "Lab3 - Prepare the production target for application deployment"
 chapter: true
-weight: 5
+weight: 6
 ---
 
-The following items are required for this workshop:
+## In this workshop [Surge](https://surge.sh/) will be the target to deploy the application. In this lab we will create an account in Surge.
 
-- AWS account and required IAM Roles - If you are at an AWS event, an account will be provided. Otherwise, go [here](https://portal.aws.amazon.com/billing/signup#/start) to create an AWS account.
 
-- run untagged jobs
--
-1. container setup
-curl -fsSL https://get.docker.com -o get-docker.sh
- sudo sh get-docker.sh
+![Surge-logo](/images/surge-logo.png)

@@ -4,7 +4,8 @@ chapter: true
 weight: 6
 ---
 
-####  We will install Docker engine so all jobs will run inside a container images, then we will install GitLab runner, configure it and register it to work with our GitLab project.
+
+####  We will install on the server Docker engine, so all jobs will run inside a container images, and GitLab Runner, configure it and register it to work with our GitLab project.
 
 {{% notice warning %}}
 It is not recommended best practice to install Runners on the same machine when the server installed for security and performance reasons, but only for the sake of simplicity, in this workshop we will install it on the same machine.
@@ -61,3 +62,6 @@ sudo gitlab-runner start`
   ![runner-7.png](/images/runner-7.png)
   - Check the **Indicates whether this runner can pick jobs without tags** option, and click **Save changes**.
   ![runner-7.png](/images/runner-8.png)
+
+
+  **Well done!! you installed and registered successfully GitLab Runner.**
