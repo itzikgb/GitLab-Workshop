@@ -1,5 +1,5 @@
 ---
-title: "Lab2 - Create GitLab project "
+title: "Lab2 - Prepare your GitLab environment"
 chapter: true
 weight: 4
 ---
