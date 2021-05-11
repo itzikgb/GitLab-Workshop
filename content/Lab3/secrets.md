@@ -1,5 +1,5 @@
 ---
-title: "Lab4 - Save the secrets in GitLab CI/CD variables"
+title: "Save the secrets in GitLab CI/CD variables"
 chapter: true
 weight: 8
 ---

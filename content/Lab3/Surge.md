@@ -1,5 +1,5 @@
 ---
-title: "Lab4 - Create account in Surge"
+title: "Create account in Surge"
 chapter: true
 weight: 7
 ---
