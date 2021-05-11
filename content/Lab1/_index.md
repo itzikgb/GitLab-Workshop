@@ -28,6 +28,9 @@ In This lab we will spin-up GitLab Ultimate AMI in AWS.
 ![aws-9](/images/aws-9.png)
 - Click on your instance ID link.
 ![aws-10](/images/aws-10.png)
+{{% notice info %}}
+The provisioning takes a few minutes. Please wait before you start the next step.
+{{% /notice %}}
 - Click Open address in order to open GitLab UI.
 ![aws-10_5](/images/aws-10_5.png)
 - It takes a few minutes to start the server, you may see this error, this is ok, wait 1 minute and refresh the page.
