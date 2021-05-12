@@ -12,7 +12,7 @@ weight: 5
 ![lab2-2](/images/lab2-2.png)
 - Select **Repo by URL**
 ![lab2-3](/images/lab2-3.png)
-- Under **Git repository URL**, enter this URL https://gitlab.com/production-demos/my-static-website.git.
+- Under **Git repository URL**, enter this URL https://gitlab.com/tech-marketing/my-static-website.git.
 ![lab2-4](/images/lab2-4.png)
 - Scroll down and click **Create project**.
 ![lab2-5](/images/lab2-5.png)
