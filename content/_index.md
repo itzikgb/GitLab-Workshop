@@ -17,8 +17,8 @@ In this workshop you will learn about the GitLab DevOps platform and how to buil
 - Configure CI/CD pipeline.
 - Change the code, run the pipeline which will build, test and deploy the new code to production.
 
-{{% notice warning %}}
+{{% notice info %}}
 <p style='text-align: left;'>
-The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
+The GitLab environment we will build is a non production grade setup. For the sake of simplicity of this workshop, we don’t use clusters and Load Balancer, we install GitLab server and the Runners on the same machine.
 </p>
 {{% /notice %}}

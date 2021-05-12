@@ -1,5 +1,5 @@
 ---
-title: "Lab5"
+title: "CI/CD configuration"
 chapter: true
 weight: 7
 ---
