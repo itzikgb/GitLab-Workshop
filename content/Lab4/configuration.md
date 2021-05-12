@@ -75,15 +75,20 @@ Once you have a unique domain, replace it in the appropriate place in **deploy t
 {{% /notice  %}}
 
 Commit the change, click Commit.
+![commit-1](/images/commit-1.png)
 
 Add a commit message.
 
 Change the default commit option to Commit to master.
 
 Click Commit.
+![commit-2](/images/commit-2.png)
 
 Wait a few seconds until you will see in the status bar, below the commit button, the pipeline ID, click on it in order to open the pipeline.
+![commit-3](/images/commit-3.png)
 
+This will open the Pipeline graph
+![commit-4](/images/commit-4.png)
 You can click on each job to check it log. wait until the **deploy to surge** job completes, when it has a green icon.
 
 Make sure all jobs passed successfully, and that pipeline status is **passed**.
@@ -95,4 +100,4 @@ Open in the browser the domain you earlier defined in the **deploy** job, and se
   - From the project overview, open CI/CD->Pipelines on the left menu.
   - Open the pipeline by clicking on the status column.
   - Click the **play** icon near the **teardown surge** job.
-  - Wait until the job completes, make sure it completed successfully. 
+  - Wait until the job completes, make sure it completed successfully.
