@@ -1,7 +1,7 @@
 ---
 title: "LAB5 - Modifying code"
 chapter: true
-weight: 0
+weight: 8
 ---
 
 # Modifying code
