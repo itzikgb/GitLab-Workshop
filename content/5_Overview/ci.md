@@ -16,7 +16,7 @@ CI makes software development easier, faster, and less risky for developers. By 
 
 - **Lead time:** Early feedback and build/test automation help decrease the time it takes to go from code committed to code successfully running in production.
 
-- **Deployment frequency""** Automated build and test is a pre-requisite to automated deploy.
+- **Deployment frequency:** Automated build and test is a pre-requisite to automated deploy.
 
 - **Time to restore service:** Automated pipelines enable fixes to be deployed to production faster reducing Mean Time to Resolution (MTTR)
 
