@@ -1,7 +1,7 @@
 ---
 title: "LAB4 - CI/CD configuration"
 chapter: true
-weight: 1
+weight: 7
 ---
 
 ## CI/CD configuration

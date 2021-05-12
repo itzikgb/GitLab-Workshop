@@ -64,4 +64,4 @@ sudo gitlab-runner start`
   ![runner-7.png](/images/runner-8.png)
 
 
-  **Well done!! you installed and registered successfully GitLab Runner.**
+  :white_check_mark:**Well done!! you installed and registered successfully GitLab Runner.**

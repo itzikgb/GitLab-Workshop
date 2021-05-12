@@ -18,4 +18,4 @@ weight: 5
 ![lab2-5](/images/lab2-5.png)
 - The import takes a few seconds.
 ![lab2-6](/images/lab2-6.png)
-- **Well done! You successfully created project in your GitLab instance.**
+:white_check_mark: **Well done! You successfully created project in your GitLab instance.**

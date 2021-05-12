@@ -37,5 +37,5 @@ The provisioning takes a few minutes. Please wait before you start the next step
 ![aws-11](/images/aws-11.png)
 - You are now should be able to access GitLab login page. username is **root**, password is your **instance ID**, click **Sign in**.
 ![aws-13](/images/aws-13.png)
-- Congratulations! you managed to start GitLab instance and sign in to it.
+  :white_check_mark: Congratulations! you managed to start GitLab instance and sign in to it.
 ![aws-14](/images/aws-14.png)

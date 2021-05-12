@@ -65,9 +65,11 @@ teardown surge:
   stage: teardown
   script:
     - npm install --global surge
-    - surge teardown gitlab-ws.surge.sh
+    - surge teardown <unique-name>.surge.sh
   when: manual
 {{< /highlight >}}
+
+Replace **unique-name** with a unique string, see the warning below.
 
 {{% notice warning %}}
 The script **surge --project ./public --domain <unique-name>.surge.sh** creates a unique domain in Surge. You need to make sure you modify the **unique-name** with a unique string so that the domain is available. For instance, if you modify **unique-name** with johnsmith, try to open **http://johnsmith.surge.sh** in the browser. If you get message **project not found** you can use it, if not try to find another string.
@@ -77,11 +79,11 @@ Once you have a unique domain, replace it in the appropriate place in **deploy t
 Commit the change, click Commit.
 ![commit-1](/images/commit-1.png)
 
-Add a commit message.
+ - Add a commit message.
 
-Change the default commit option to Commit to master.
+ - Change the default commit option to Commit to master.
 
-Click Commit.
+ - Click Commit.
 ![commit-2](/images/commit-2.png)
 
 Wait a few seconds until you will see in the status bar, below the commit button, the pipeline ID, click on it in order to open the pipeline.
@@ -89,15 +91,20 @@ Wait a few seconds until you will see in the status bar, below the commit button
 
 This will open the Pipeline graph
 ![commit-4](/images/commit-4.png)
-You can click on each job to check it log. wait until the **deploy to surge** job completes, when it has a green icon.
+You can click on each job to check it log. wait until the **deploy to surge** job completes, when it has a green **V** icon.
 
 Make sure all jobs passed successfully, and that pipeline status is **passed**.
-
+![pipeline-5](/images/pipeline-5.png)
 Open in the browser the domain you earlier defined in the **deploy** job, and see your deployed website.
 
-**Cleanup** Teardown the domain. In order to be able to run the deploy job again, (you will need to run it in the next lab), you will need to tear down the domain. Open to the pipeline, and manually run the teardown job.
+## Cleanup
+
+**Teardown the domain** In order to be able to run the deploy job again, (you will need to run it in the next lab). Open the pipeline, and manually run the teardown job.
 
   - From the project overview, open CI/CD->Pipelines on the left menu.
+  ![pipeline-1](/images/pipeline-1.png)
   - Open the pipeline by clicking on the status column.
+  ![pipeline-6](/images/pipeline-6.png)
   - Click the **play** icon near the **teardown surge** job.
+  ![pipeline-7](/images/pipeline-7.png)
   - Wait until the job completes, make sure it completed successfully.
