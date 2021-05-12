@@ -4,8 +4,9 @@ chapter: true
 weight: 3
 ---
 
-In This lab we will spin-up GitLab Ultimate AMI in AWS.
+## In This lab we will spin-up GitLab Ultimate AMI in AWS.
 
+**:white_check_mark: Step-by-step Instructions**
 
 - Open [GitLab Ultimate](https://aws.amazon.com/marketplace/pp/B07SJ817DX) in AWS Marketplace.
 - Click on **Continue to Subscribe**

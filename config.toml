@@ -50,29 +50,15 @@ url = "https://about.gitlab.com/learn"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> AWS Builders Library"
-url = "https://aws.amazon.com/builders-library/"
+name = "<i class='far fa-lightbulb'></i> GitLab website"
+url = "https://about.gitlab.com"
 weight = 11
 
 [[menu.shortcuts]]
-name = "<i class='far fa-lightbulb'></i> Modernization with AWS"
-url = "https://aws.amazon.com/blogs/modernizing-with-aws/"
+name = "<i class='far fa-lightbulb'></i> GitLab SAAS"
+url = "https://gitlab.com/"
 weight = 20
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> EKS Workshop"
-url = "https://eksworkshop.com/"
-weight = 21
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> ECS Workshop"
-url = "https://ecsworkshop.com/"
-weight = 22
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-chalkboard-teacher'></i> App Mesh Workshop"
-url = "https://www.appmeshworkshop.com/"
-weight = 23
 
 [markup]
   defaultMarkdownHandler = "blackfriday"
