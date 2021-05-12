@@ -4,10 +4,10 @@ chapter: true
 weight: 1
 ---
 
-# GitLab is the open DevOps platform
+# GitLab - the open DevOps platform
 
 
-**Help you to iterate faster, innovate together**
+**GitLab helps you to iterate faster, innovate together.**
 
 **Our open DevOps platform is a single application for  collaboration, visibility, and development velocity.**
 

@@ -9,15 +9,17 @@ weight: 2
 
 In the root of the project you imported in **lab2** there is already **.gitlab-ci.yml** file that includes **build** and **test** **stages**, and **jobs** in each stage.
 
-- We will add two additional **stages** and **jobs** to this configuration file,  **deploy** and **teardown**.:
- - **deploy**  will deploy the website to **surge**.
- - **teardown** will be a [manual](https://docs.gitlab.com/ee/ci/yaml/#whenmanual) job that will cleanup the new domain we create in the **deploy** job.
+We will add two additional **stages** and **jobs** to this configuration file,  **deploy** and **teardown**:
 
-- Open the Web IDE.
+  - **deploy**  will deploy the sample website to **surge**.
+  - **teardown** will be a [manual](https://docs.gitlab.com/ee/ci/yaml/#whenmanual) job that will cleanup the new domain we create in the **deploy** job.
+
+Open the Web IDE.
 ![yml-1](/images/yml-1.png)
-- Open the .gitlab-ci.yml file.
+On the left, open the .gitlab-ci.yml file.
 ![yml-2](/images/yml-2.png)
-- You will notice **stages** keyword, with **build** and **test** stages. Add **deploy** and **teardown** stages to it.
+You will notice **stages** keyword, with **build** and **test** stages.
+Add **deploy** and **teardown** stages to it.
 
 Your stages now should look like this:
 
@@ -29,7 +31,8 @@ stages:
   - teardown
 {{< /highlight >}}
 
-- Scroll down, and create a deploy job in the deploy stage.
+Scroll down, and create a deploy job in the deploy stage.
+
   - Job name: **deploy to surge**
   - stage: **deploy**
   - add two scripts:
@@ -46,13 +49,14 @@ deploy to surge:
     - surge --project ./public --domain <unique-name>.surge.sh
 {{< /highlight >}}
 
- - Below the **deploy** job, add another job, tear down the domain:
+ Below the **deploy** job, add another job, tear down the domain:
+
   - Job name: **teardown surge**
-  - stage: **teardown**
-  - add two scripts:
+  - Stage: **teardown**
+  - Add two scripts:
     - `npm install --global surge`
     - `surge teardown <unique-name>.surge.sh`
-  - set this job as manual job (The pipeline will wait until someone will start it manually) using the **manual** keyword: `when: manual`
+  - Set this job as manual job (The pipeline will wait until someone will start it manually) using the **manual** keyword: `when: manual`
 
 Your tear down job should look like this one:
 
@@ -69,3 +73,17 @@ teardown surge:
 The script **surge --project ./public --domain <unique-name>.surge.sh** creates a unique domain in Surge. You need to make sure you modify the **unique-name** with a unique string so that the domain is available. For instance, if you modify **unique-name** with johnsmith, try to open **http://johnsmith.surge.sh** in the browser. If you get message **project not found** you can use it, if not try to find another string.
 Once you have a unique domain, replace it in the appropriate place in **deploy to surge** and **teardown surge** jobs you created.  
 {{% /notice  %}}
+
+Commit the change, click Commit.
+
+Add a commit message.
+
+Change the default commit option to Commit to master.
+
+Click Commit.
+
+Wait a few seconds until you will see in the status bar, below the commit button, the pipeline ID, click on it in order to open the pipeline.
+
+You can click on each job to check it log. wait until the **deploy to surge** job completes, when it has a green icon.
+
+Open in the browser the domain you earlier defined in the **deploy** job, and see your deployed website.

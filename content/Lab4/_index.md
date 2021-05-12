@@ -1,12 +1,12 @@
 ---
 title: "LAB4 - CI/CD configuration"
 chapter: true
-weight: 7
+weight: 1
 ---
 
 ## CI/CD configuration
 
-In GitLab, the CI/CD configuration is made via code. In order to enable CI/CD, you will need to create [.gitlab-ci.yml](https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html) which is a [YAML](https://en.wikipedia.org/wiki/YAML) file, and save it in the root of your repository.
+In GitLab, the CI/CD configuration is made via code. In order to enable CI/CD, you need to create [.gitlab-ci.yml](https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html) file in [YAML](https://en.wikipedia.org/wiki/YAML) format, and save it in the root of your repository.
 
 
 In this file, you define:
