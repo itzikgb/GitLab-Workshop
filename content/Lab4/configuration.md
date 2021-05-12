@@ -86,4 +86,13 @@ Wait a few seconds until you will see in the status bar, below the commit button
 
 You can click on each job to check it log. wait until the **deploy to surge** job completes, when it has a green icon.
 
+Make sure all jobs passed successfully, and that pipeline status is **passed**.
+
 Open in the browser the domain you earlier defined in the **deploy** job, and see your deployed website.
+
+**Cleanup** Teardown the domain. In order to be able to run the deploy job again, (you will need to run it in the next lab), you will need to tear down the domain. Open to the pipeline, and manually run the teardown job.
+
+  - From the project overview, open CI/CD->Pipelines on the left menu.
+  - Open the pipeline by clicking on the status column.
+  - Click the **play** icon near the **teardown surge** job.
+  - Wait until the job completes, make sure it completed successfully. 
