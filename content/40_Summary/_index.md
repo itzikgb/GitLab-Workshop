@@ -1,10 +1,10 @@
 ---
-title: "Conclusion"
+title: "Summary"
 chapter: true
 weight: 9
 ---
 
-# Conclusion
+# Summary
 
 In this workshop we learned:
 
@@ -12,4 +12,5 @@ In this workshop we learned:
 - How to install GitLab Runner and register it to our GitLab project.
 - How to create a new project and import repository to it.
 - We experienced GitLab CI/CD configuration via the .gitlab-ci.yml file.
-- We used GitLab to build, test and deploy application. 
+- We used GitLab variables to save secrets.  
+- We used GitLab to build, test and deploy application.
