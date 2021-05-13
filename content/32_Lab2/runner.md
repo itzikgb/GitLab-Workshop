@@ -4,8 +4,20 @@ chapter: true
 weight: 6
 ---
 
+### :star:Lab Objectives
 
-####  We will install on the server Docker engine, so all jobs will run inside a container images, and GitLab Runner, configure it and register it to work with our GitLab project.
+Runner machines are the build agents that run the CI/CD jobs. We will install GitLab Runner and Docker engine. We run all jobs inside the images, and therefore the runner machine requires Docker engine on the runner machine.
+
+We will configure the Runner and register it to work with our GitLab project.
+
+{{% notice note %}}
+Running jobs inside container has several advantages:
+Jobs are isolated which avoid compatibility issues, and they run in a secured environment. Once a job completes, the image is being destroyed and nothing is left on the runner machine.
+Also, you don't need to install any build tool on the runner machine, all prerequisite tools available in the standard or custom Docker image.
+For more information about running jobs in docker containers, visit https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#run-your-cicd-jobs-in-docker-containers
+{{% /notice  %}}
+
+
 
 {{% notice warning %}}
 It is not recommended best practice to install Runners on the same machine when the server installed for security and performance reasons, but only for the sake of simplicity, in this workshop we will install it on the same machine.
@@ -14,10 +26,6 @@ It is not recommended best practice to install Runners on the same machine when 
 {{% notice tip %}} GitLab Runner is open-source and written in Go. It can be run as a single binary; no language-specific requirements are needed. You can install GitLab Runner on several different supported operating systems. Other operating systems may also work, as long as you can compile a Go binary on them.
 {{% /notice %}}
 
-
-{{% notice note %}}
-For more information about running jobs in docker containers, visit https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#run-your-cicd-jobs-in-docker-containers
-{{% /notice  %}}
 
 # Install Docker engine   
   - Go to your Instance summary, and click **Connect** in order to open the console.
