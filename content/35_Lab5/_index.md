@@ -1,10 +1,10 @@
 ---
-title: "LAB5 - Modifying code"
+title: "LAB5 - Development flow: change code, build, test, and deploy"
 chapter: true
 weight: 8
 ---
 
-# Modifying code
+# Development flow: change code, build, test, and deploy
 
 Now that we have a project configured with CI/CD that build, test and deploy the app, we can make a change to the website, test, and deploy it
 

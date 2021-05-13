@@ -9,14 +9,9 @@ weight = 2
 
 | LAB | #	LAB Title	| Time Allocated|
 | ---- |   ---------- |   ------------ |
-| Lab1 |	Create Accounts |	10 min|
-| Lab2 |	Getting Started	| 10 min|
-| Lab3 |	Stand up GitLab Ultimate	| 30 min|
-| Lab4 |	Install Runner	| 30 min|
+| Lab1 |	Stand-up GitLab Ultimate |	20 min|
+| Lab2 |	Prepare your environment	| 30 min|
+| Lab3 |	Prepare the production target	| 30 min|
 | BREAK |	Use this time to catch up	| 10 min|
-| Lab4 |	Gremlin Attack |	10 min|
-| Lab5 |	Re-Deploy Vault (HA) |	30 min|
-| BREAK|	Use this time to catch up	| 10 min|
-| Lab5 |	Check Vault deployment	| 20 min|
-| Lab6 |	|Re-Deploy Gremlin Attack	| 10 min|
-| Lab7 |	Clean Up	| 10 min|
+| Lab4 |	CI/CD configuration |	20 min|
+| Lab5 |	Development flow: change code, build, test, and deploy |	20 min|

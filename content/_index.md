@@ -19,6 +19,6 @@ In this workshop you will learn about the GitLab DevOps platform and how to buil
 
 {{% notice info %}}
 <p style='text-align: left;'>
-The GitLab environment we will build is a non production grade setup. For the sake of simplicity of this workshop, we don’t use clusters and Load Balancer, we install GitLab server and the Runners on the same machine.
+The GitLab environment we will build is a non production grade setup. For the sake of simplicity of this workshop, we use one machine for the entire setup, we don’t use clusters and Load Balancer, we install GitLab server and the Runner on the same machine.
 </p>
 {{% /notice %}}
