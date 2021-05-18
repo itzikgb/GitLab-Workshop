@@ -8,13 +8,7 @@ weight: 9
 
 In this workshop we learned:
 
-- How to stand-up GitLab Ultimate in AWS via the marketplace.
-- How to install GitLab Runner and register it to our GitLab project.
-- How to create a new project and import repository to it.
-- We experienced GitLab CI/CD configuration via the .gitlab-ci.yml file.
-- We used GitLab variables to save secrets.  
-- We used GitLab to build, test and deploy application.
-
+ main
 
 ## Cleanup
 
@@ -40,3 +34,11 @@ So not incurr additional charges.
 - Click the "Actions" button on the right hand side and select "Cancel Subscription".
 - In the dialog that comes up, check the check box, and click "Yes, cancel subscription".
 
+=======
+- How to stand-up **GitLab Ultimate** in **AWS** via the **marketplace**.
+- How to install GitLab **Runner** and register it to our GitLab project.
+- How to create a new project and import a repository to it.
+- How to configure GitLab CI/CD via the **.gitlab-ci.yml** file.
+- How to save **secrets** in GitLab **Variables** in the **CI/CD settings**.  
+- How to use **GitLab DevOps platform** to **build**, **test** and **deploy** applications.
+main
