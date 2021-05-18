@@ -9,17 +9,16 @@ weight: 2
 
 In the root of the project you imported in **lab2** there is already **.gitlab-ci.yml** file that includes **build** and **test** **stages**, and **jobs** in each stage.
 
-We will add two additional **stages** and **jobs** to this configuration file,  **deploy** and **teardown**:
+We will add one additional **stage** and **jobjobs** to this configuration file,  **deploy**:
 
   - **deploy**  will deploy the sample website to **surge**.
-  - **teardown** will be a [manual](https://docs.gitlab.com/ee/ci/yaml/#whenmanual) job that will cleanup the new domain we create in the **deploy** job.
 
 Open the Web IDE.
 ![yml-1](/images/yml-1.png)
 On the left, open the .gitlab-ci.yml file.
 ![yml-2](/images/yml-2.png)
 You will notice **stages** keyword, with **build** and **test** stages.
-Add **deploy** and **teardown** stages to it.
+Add **deploy** stage to it.
 
 Your stages now should look like this:
 
@@ -28,53 +27,29 @@ stages:
   - build
   - test
   - deploy
-  - teardown
 {{< /highlight >}}
 
 Scroll down, and create a deploy job in the deploy stage.
 
-  - Job name: **deploy to surge**
+  - Job name: **deploy to s3**
   - stage: **deploy**
-  - add two scripts:
-    - `npm install --global surge`
-    - `surge --project ./public --domain gitlab1-ws.surge.sh`
+  - add the following scripts:
+    - `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
+    - `unzip -q awscliv2.zip`
+    - `./aws/install`
+    - `aws s3 cp ./public s3://mytestwebsite211/ --recursive`
 
 Your deploy job should look like this one:
 
 {{< highlight html >}}
-deploy to surge:
+deploy to s3:
   stage: deploy
   script:
-    - npm install --global surge
-    - surge --project ./public --domain <unique-name>.surge.sh
+    - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    - unzip -q awscliv2.zip
+    - ./aws/install 
+    - aws s3 cp ./public s3://mytestwebsite211/ --recursive
 {{< /highlight >}}
-
- Below the **deploy** job, add another job, tear down the domain:
-
-  - Job name: **teardown surge**
-  - Stage: **teardown**
-  - Add two scripts:
-    - `npm install --global surge`
-    - `surge teardown <unique-name>.surge.sh`
-  - Set this job as manual job (The pipeline will wait until someone will start it manually) using the **manual** keyword: `when: manual`
-
-Your tear down job should look like this one:
-
-{{< highlight html >}}
-teardown surge:
-  stage: teardown
-  script:
-    - npm install --global surge
-    - surge teardown <unique-name>.surge.sh
-  when: manual
-{{< /highlight >}}
-
-Replace **unique-name** with a unique string, see the warning below.
-
-{{% notice warning %}}
-The script **surge --project ./public --domain <unique-name>.surge.sh** creates a unique domain in Surge. You need to make sure you modify the **unique-name** with a unique string so that the domain is available. For instance, if you modify **unique-name** with johnsmith, try to open **http://johnsmith.surge.sh** in the browser. If you get message **project not found** you can use it, if not try to find another string.
-Once you have a unique domain, replace it in the appropriate place in **deploy to surge** and **teardown surge** jobs you created.  
-{{% /notice  %}}
 
 Commit the change, click Commit.
 ![commit-1](/images/commit-1.png)
@@ -91,20 +66,8 @@ Wait a few seconds until you will see in the status bar, below the commit button
 
 This will open the Pipeline graph
 ![commit-4](/images/commit-4.png)
-You can click on each job to check it log. wait until the **deploy to surge** job completes, when it has a green **V** icon.
+You can click on each job to check it log. wait until the **deploy to s3** job completes, when it has a green **V** icon.
 
 Make sure all jobs passed successfully, and that pipeline status is **passed**.
 ![pipeline-5](/images/pipeline-5.png)
-Open in the browser the domain you earlier defined in the **deploy** job, and see your deployed website.
-
-## Cleanup
-
-**Teardown the domain** In order to be able to run the deploy job again, (you will need to run it in the next lab). Open the pipeline, and manually run the teardown job.
-
-  - From the project overview, open CI/CD->Pipelines on the left menu.
-  ![pipeline-1](/images/pipeline-1.png)
-  - Open the pipeline by clicking on the status column.
-  ![pipeline-6](/images/pipeline-6.png)
-  - Click the **play** icon near the **teardown surge** job.
-  ![pipeline-7](/images/pipeline-7.png)
-  - Wait until the job completes, make sure it completed successfully.
+Open in the browser the domain of our S3 Bucket and you will be able to see the website.

@@ -1,5 +1,5 @@
 ---
-title: "LAB4 - CI/CD configuration"
+title: "Lab4 - CI/CD configuration"
 chapter: true
 weight: 7
 ---
