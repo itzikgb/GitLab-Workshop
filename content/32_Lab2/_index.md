@@ -4,6 +4,8 @@ chapter: true
 weight: 4
 ---
 
+# Prepare your GitLab environment
+
 In this lab we will create a new project in GitLab by importing an existing repository. Then, we will install [GitLab Runner](https://docs.gitlab.com/runner/), the agent that runs the CI/CD jobs, and register it to the project we just created.
 
 

@@ -29,10 +29,10 @@ First, we need to create an S3 bucket.
 - Then click "Properties".
 ![s3cr-4](/images/s3cr_4.png)
 
-- In the page that opend scroll all the way down, until you reach "Static website hosting", and click "Edit".
+- In the page that opened scroll all the way down, until you reach "Static website hosting", and click "Edit".
 ![s3cr-5](/images/s3cr_5.png)
 
-- Select "Enable" int configiuration page, and write "index.html" under the index document.
+- Select "Enable" in the configuration page, and write "index.html" under the index document.
 ![s3cr-6](/images/s3cr_6.png)
 
 - Scroll down and select "Save Changes".
@@ -49,7 +49,7 @@ First, we need to create an S3 bucket.
 ![s3cr-9](/images/s3cr_9.png)
 
 - Paste the following policy and change "BUCKET_NAME" to your S3 bucket name.
-``` 
+```
 {
     "Version": "2012-10-17",
     "Statement": [

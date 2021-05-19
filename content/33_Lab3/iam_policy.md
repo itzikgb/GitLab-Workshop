@@ -14,7 +14,7 @@ We do that with an EC2 Instance policy that we attach to our Gitlab Instance.
 - In the IAM Page we select "Roles" From the left side then "Create Role".
 ![iam-1](/images/iam_p1.png)
 
-- In the Create Role Page, Select EC2 to create an instance profile, then click "Next"
+- In the Create Role Page, leave **Select type of trusted entity**  set to **AWS service**. Under **Common use cases**, Select **EC2** to create an instance profile, , then click "Next"
 ![iam-2](/images/iam_p2.png)
 
 - In the Attach Permissions Polices Page use the search bar to look for "AmazonS3FullAccess" Policy, Then Click "Next"
