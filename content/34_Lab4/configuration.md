@@ -19,7 +19,6 @@ On the left, open the .gitlab-ci.yml file.
 ![yml-2](/images/yml-2.png)
 You will notice **stages** keyword, with **build**, **test** and **deploy** stages.
 
-Your stages should look like this:
 
 {{< highlight html >}}
 stages:
@@ -73,4 +72,7 @@ You can click on each job to check its log. Wait until the **deploy to s3** job 
 
 Make sure all jobs passed successfully, and that pipeline status is **passed**.
 ![pipeline-5](/images/pipeline-5.png)
-Open in the browser the domain of our S3 Bucket and you will be able to see the website.
+
+:white_check_mark: Well done! Your pipeline just built, tested and deployed the sample website to **S3**.
+Open in the browser the domain of our **S3 Bucket**, and you will be able to see the website.
+![website](/images/website.png)
