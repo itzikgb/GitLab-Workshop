@@ -9,18 +9,17 @@ weight: 2
 
 In the root of the project you imported in **lab2** there is already **.gitlab-ci.yml** file that includes **build** and **test** **stages**, and **jobs** in each stage.
 
-We will add one additional **stage** and **jobjobs** to this configuration file,  **deploy**:
+We will add one additional **job** to this configuration file,  **deploy**:
 
-  - **deploy**  will deploy the sample website to **surge**.
+  - **deploy**  will deploy the sample website to **S3**.
 
 Open the Web IDE.
 ![yml-1](/images/yml-1.png)
 On the left, open the .gitlab-ci.yml file.
 ![yml-2](/images/yml-2.png)
-You will notice **stages** keyword, with **build** and **test** stages.
-Add **deploy** stage to it.
+You will notice **stages** keyword, with **build**, **test** and **deploy** stages.
 
-Your stages now should look like this:
+Your stages should look like this:
 
 {{< highlight html >}}
 stages:
@@ -29,7 +28,7 @@ stages:
   - deploy
 {{< /highlight >}}
 
-Scroll down, and create a deploy job in the deploy stage.
+Scroll down, and create a deploy job in the **deploy** stage.
 
   - Job name: **deploy to s3**
   - stage: **deploy**
