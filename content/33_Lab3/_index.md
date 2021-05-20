@@ -6,13 +6,13 @@ weight: 6
 
 ## Setting Up an S3 Bucket to Host our target.
 
-We will use an S3 bucket to host our deployed web site.
+We will use an **S3 bucket** to host our deployed web site.
 For that we have to create the following:
 
-- Create IAM role that allows our runner to access S3.
+- Create **IAM role** that allows our runner to access **S3**.
 - Attach our created role to our Gitlab Machine.
-- Create an S3 bucket.
-- Set the bucket for "Static Hosting" to allow public access to our site.
+- Create an **S3 bucket**.
+- Set the bucket for **Static Hosting** to allow public access to our site.
 
 
 {{% notice warning %}}

@@ -14,6 +14,7 @@ In this workshop you will learn about the GitLab DevOps platform and how to buil
 ### Learning Objectives
 - Stand up a [self managed instance of GitLab](https://aws.amazon.com/marketplace/pp/B07SJ817DX).
 - Create a project, import a sample source code.
+- Create deployment target in S3. 
 - Configure CI/CD pipeline.
 - Change the code, run the pipeline which will build, test and deploy the new code to production.
 
