@@ -15,4 +15,4 @@ weight = 2
 | BREAK |	Use this time to catch up	| 10 min|
 | Lab4 |	CI/CD configuration |	20 min|
 | Lab5 |	Development flow: change code, build, test, and deploy |	20 min|
-|  | Summary and cleanup| 10 mins|
+|      |    Summary and cleanup | 10 mins|
