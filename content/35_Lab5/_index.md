@@ -17,13 +17,13 @@ Modify the code, replace the text **Now go build something great** with
 `With GitLab you can iterate faster, innovate together: Our open DevOps platform is a single application for unparalleled collaboration, visibility, and development velocity.`
 
 ![code-2](/images/code-2.png)
-Commit the change, click Commit.
+Commit the change, click **Commit**.
 
- - Add a commit message.
+ - Add a **Commit message**.
 
- - Change the default commit option to Commit to master.
+ - Change the default commit option to **Commit to master branch**.
 
- - Click Commit.
+ - Click **Commit**.
 
 Wait for the pipeline to complete.
 

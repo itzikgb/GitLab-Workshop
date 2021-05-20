@@ -6,6 +6,11 @@ weight: 3
 
 ## In This lab we will spin-up GitLab Ultimate AMI in AWS.
 
+{{% notice note %}}
+ Pre requisites for this lab is having an accessible and working VPC.
+{{% /notice  %}}
+
+
 **:white_check_mark: Step-by-step Instructions**
 
 - Open [GitLab Ultimate](https://aws.amazon.com/marketplace/pp/B07SJ817DX) in AWS Marketplace.
@@ -33,6 +38,10 @@ weight: 3
 The provisioning takes a few minutes. Please wait before you start the next step.
 {{% /notice %}}
 - Click Open address in order to open GitLab UI.
+{{% notice note %}}
+ Copy the **private** or **public** IP to your browser , depending on your **VPC configuration**.
+{{% /notice  %}}
+
 ![aws-10_5](/images/aws-10_5.png)
 - It takes a few minutes to start the server, you may see this error, this is ok, wait 1 minute and refresh the page.
 ![aws-11](/images/aws-11.png)

@@ -58,7 +58,7 @@ deploy to s3:
 Commit the change, click **Commit**.
 ![commit-1](/images/commit-1.png)
 
- - Add a commit message.
+ - Add a **commit message**.
 
  - Change the default commit option to **Commit to master branch**.
 
@@ -68,7 +68,7 @@ Commit the change, click **Commit**.
 Wait a few seconds until you will see in the status bar, below the commit button, the pipeline ID, click on it in order to open the pipeline.
 ![commit-3](/images/commit-3.png)
 
-This will open the Pipeline graph.
+This will open the **Pipeline graph**.
 ![commit-4](/images/commit-4.png)
 You can click on each job to check its log. Wait until the **deploy to s3** job completes, when it has a green **V** icon.
 

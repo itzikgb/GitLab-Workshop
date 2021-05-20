@@ -29,6 +29,9 @@ It is not recommended best practice to install Runners on the same machine when 
 
 # Install Docker engine   
   - Go to your Instance summary, and click **Connect** in order to open the console.
+  {{% notice note %}}
+  In order to setup the Runners we need to connect to the Gitlab machine we are running. This can be done via **SSH** from any command line, or directly via the **AWS Console**, depending on your **VPC** is set. In our example we will use the **AWS console - Connect** feature to SSH into the machines.
+  {{% /notice  %}}
   ![runner-1](/images/runner-1.png)
   - Click Connect again.
   ![runner-2](/images/runner-2.png)
