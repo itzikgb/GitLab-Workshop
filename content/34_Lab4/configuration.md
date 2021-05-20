@@ -39,6 +39,10 @@ Scroll down, and create a deploy job in the deploy stage.
     - `./aws/install`
     - `aws s3 cp ./public s3://mytestwebsite211/ --recursive`
 
+{{% notice warning %}}
+Replace **mytestwebsite211** with your bucket name.
+{{% /notice  %}}
+
 Your deploy job should look like this one:
 
 {{< highlight html >}}
@@ -47,26 +51,26 @@ deploy to s3:
   script:
     - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     - unzip -q awscliv2.zip
-    - ./aws/install 
+    - ./aws/install
     - aws s3 cp ./public s3://mytestwebsite211/ --recursive
 {{< /highlight >}}
 
-Commit the change, click Commit.
+Commit the change, click **Commit**.
 ![commit-1](/images/commit-1.png)
 
  - Add a commit message.
 
- - Change the default commit option to Commit to master.
+ - Change the default commit option to **Commit to master branch**.
 
- - Click Commit.
+ - Click **Commit**.
 ![commit-2](/images/commit-2.png)
 
 Wait a few seconds until you will see in the status bar, below the commit button, the pipeline ID, click on it in order to open the pipeline.
 ![commit-3](/images/commit-3.png)
 
-This will open the Pipeline graph
+This will open the Pipeline graph.
 ![commit-4](/images/commit-4.png)
-You can click on each job to check it log. wait until the **deploy to s3** job completes, when it has a green **V** icon.
+You can click on each job to check its log. Wait until the **deploy to s3** job completes, when it has a green **V** icon.
 
 Make sure all jobs passed successfully, and that pipeline status is **passed**.
 ![pipeline-5](/images/pipeline-5.png)
