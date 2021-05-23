@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitLab - DevOps Platform on CI/CD</title>
+    <link>/5_overview.html</link>
+    <description>Recent content in GitLab - DevOps Platform on CI/CD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/5_overview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agile Management</title>
+      <link>/5_overview/agile.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/5_overview/agile.html</guid>
+      <description>Agile Planning and Management By empowering teams, embracing change, and focusing on delivering value, Agile methodologies have transformed software development. Agile teams create more relevant, valuable, customer-centric products, more quickly than ever.
+Development teams accelerate the delivery of value with iterative, incremental, and lean project methodologies including Scrum, Kanban, Extreme Programming (XP), and more. Large enterprises have adopted Agile at enterprise scale through a variety of frameworks, including Scaled Agile Framework (SAFe), Spotify, Large Scale Scrum (LeSS), and others.</description>
+    </item>
+    
+    <item>
+      <title>Version Control and Collaboration (VC&amp;C)</title>
+      <link>/5_overview/vcc.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/5_overview/vcc.html</guid>
+      <description>Version Control and Collaboration (VC&amp;amp;C)  As organizations accelerate delivery, through DevOps, controlling and managing different versions of the application assets from code to configuration and from design to deployment is incredibly important. Velocity without robust version control and traceability is like driving a car with out a seatbelt.
+Version Control and Collaboration is more than simply tracking changes, versions, and branches of code. Effectively, it includes practices such as:</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration (CI)</title>
+      <link>/5_overview/ci.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/5_overview/ci.html</guid>
+      <description>Continuous Integration (CI)  The Continuous Integration (CI) use case is a staple of modern software development in the digital age. It&amp;rsquo;s unlikely that you hear the word &amp;ldquo;DevOps&amp;rdquo; without a reference to &amp;ldquo;Continuous Integration and Continuous Delivery&amp;rdquo; (CI/CD) soon after. In the most basic sense, the CI part of the equation enables development teams to automate building and testing their code.
+When practicing CI, teams collaborate on projects by using a shared repository to store, modify and track frequent changes to their codebase.</description>
+    </item>
+    
+    <item>
+      <title>DevSecOps (Shift Left Security)</title>
+      <link>/5_overview/devsecops.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/5_overview/devsecops.html</guid>
+      <description>DevSecOps The DevSecOps usecase is applicable for customers who are trying to &amp;ldquo;shift left&amp;rdquo; to find security vulnerabilities earlier within their DevOps methodology but have not been able to achieve expected results.
+Application Security is hard when security is separated from your DevOps flow. Security has traditionally been the final hurdle in the development life cycle. Iterative development workflows can make security a release bottleneck. Customers don&amp;rsquo;t have enough security people to test all of their code, and hiring more security analysts won&amp;rsquo;t automatically reduce the friction between app sec and engineering teams.</description>
+    </item>
+    
+    <item>
+      <title>Continuous Delivery (CD)</title>
+      <link>/5_overview/cd.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/5_overview/cd.html</guid>
+      <description>Continuous Delivery “Deployment is manual”
+“Functional tests are manual”
+“Time consuming or lack of rollback on performance degradation or production errors”
+“Hard to maintain environment configurations and hard to operate”
+“No consistency in deployment process”
+“Manual / hard coded configurations”
+“No standardized software artifact”
+“No release management in place”
+“Too dependent on other teams to get any release done”
+If these are the typical problems you face, Continuous Delivery is for you.</description>
+    </item>
+    
+    <item>
+      <title>GitOps</title>
+      <link>/5_overview/gitops.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/5_overview/gitops.html</guid>
+      <description>GitOps The need for GitOps Modern applications are developed with rapid iteration and run at highly dynamic scale. In an organization with a mature DevOps culture code can be deployed to production hundreds of times per day. Applications can then run under highly dynamic loads from a few users to millions. Modern infrastructure needs to be elastic. Capacity that can be dynamically provisioned and de-provisioned is able to keep pace with load maintaining optimal performance and minimal cost.</description>
+    </item>
+    
+  </channel>
+</rss>

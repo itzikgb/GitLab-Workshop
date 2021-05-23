@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab3 - Prepare the production target for application deployment on CI/CD</title>
+    <link>/33_lab3.html</link>
+    <description>Recent content in Lab3 - Prepare the production target for application deployment on CI/CD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/33_lab3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create an IAM Policy</title>
+      <link>/33_lab3/iam_policy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/33_lab3/iam_policy.html</guid>
+      <description>Create an IAM Policy for the Gitlab Runner. In order to be able to deploy our website to an S3 bucket we need to allow our runner to access S3. We do that with an EC2 Instance policy that we attach to our Gitlab Instance.
+ In the AWS Console we select from the upper bar &amp;ldquo;Services&amp;rdquo; - &amp;gt; &amp;ldquo;IAM&amp;rdquo;
+ In the IAM Page we select &amp;ldquo;Roles&amp;rdquo; From the left side then &amp;ldquo;Create Role&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Attach IAM Policy To Gitlab Runner</title>
+      <link>/33_lab3/iam_attach.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/33_lab3/iam_attach.html</guid>
+      <description>Attach IAM Policy To Gitlab Runner For the Gitlab runner to use the role we just create, we must attach it to the EC2 Machine that runs our Runner. In our case our Gitlab Server.
+ In the AWS Console we select from the upper bar Services - &amp;gt; EC2, and open our instance.  Select our Gitlab machine, then click Actions -&amp;gt; Security -&amp;gt; Modify IAM Role.  From the dropdown in the page that opened select the role we create in the previous step.</description>
+    </item>
+    
+    <item>
+      <title>Create and S3 Bucket and Setup Static Hosting</title>
+      <link>/33_lab3/s3_create.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/33_lab3/s3_create.html</guid>
+      <description>Create and S3 Bucket and Setup Static Hosting To host our site we will leverage S3 Static Hosting capability. First, we need to create an S3 bucket.
+ In the AWS Console we select from the upper bar Services - &amp;gt; S3
+ On The S3 page, select Buckets then Create Bucket.  Give the bucket a unique name, then scroll down to the Block Public Access settings section.  In the Block Public Access settings section, Remove the check box next to Block all public access, and add a check box at bottom to acknowledge public access.</description>
+    </item>
+    
+  </channel>
+</rss>

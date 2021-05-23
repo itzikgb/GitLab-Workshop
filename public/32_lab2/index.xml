@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab2 - Prepare your GitLab environment on CI/CD</title>
+    <link>/32_lab2.html</link>
+    <description>Recent content in Lab2 - Prepare your GitLab environment on CI/CD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/32_lab2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Import repository</title>
+      <link>/32_lab2/import_project.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/32_lab2/import_project.html</guid>
+      <description>We will import an existing sample application developed in gatsby.
+ Click New project.  Select Import project  Select Repo by URL  Under Git repository URL, enter this URL https://gitlab.com/tech-marketing/my-static-website.git.  Scroll down and click Create project.  The import takes a few seconds. ✅ Well done! You successfully created project in your GitLab instance.  </description>
+    </item>
+    
+    <item>
+      <title>Install and register Runner</title>
+      <link>/32_lab2/runner.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/32_lab2/runner.html</guid>
+      <description>⭐Lab Objectives Runner machines are the build agents that run the CI/CD jobs. We will install GitLab Runner and Docker engine. We run all jobs inside the images, and therefore the runner machine requires Docker engine on the runner machine.
+We will configure the Runner and register it to work with our GitLab project.
+Running jobs inside container has several advantages: Jobs are isolated which avoid compatibility issues, and they run in a secured environment.</description>
+    </item>
+    
+  </channel>
+</rss>
